@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.wf-loading {
+  visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+  visibility: visible;
+}
+
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@font-face {
+    font-family: 'cooper_bold';
+    src: url(../font/'cooperltbtbold-webfont.woff2') format('woff2'),
+         url(../font/'cooperltbtbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'duel-4';
+  src: url(../font/'atcduel-v4sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url(../font/'atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url(../font/'atcduel-v4sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url(../font/'atcduel-v4sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url(../font/'atcduel-v4sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url(../font/'atcduel-v4sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'duel-10';
+  src: url(../font/'atcduel-v10sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url(../font/'atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url(../font/'atcduel-v10sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url(../font/'atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url(../font/'atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url(../font/'atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.duel-4 {font-family: 'duel-4';}
+.duel-10 {font-family: 'duel-10';}
+.cooper {font-family: 'cooper_bold';}
+.all-caps {text-transform: uppercase;}
+
+html {
+  font-size: 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 100%;
+  font-family: ocr-b-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.03em;
+  /*width: -webkit-calc(100% - 10px);
+  width: calc(100% - 10px);
+  margin: 5px auto;*/
+  background-color: white;
+  color: #464646;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+::-moz-selection {
+  background-color: #464646;
+  color: white;
+}
+
+::selection {
+  background-color: #464646;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'cooper_bold';
+}
+
+/*@media only screen and (min-width: 38em) {
+  body {
+    width: -webkit-calc(100% - 36px);
+    width: calc(100% - 36px);
+    margin: 18px auto;
+  }
+}*/
+
+body a {
+  color: #464646;
+}
