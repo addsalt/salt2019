@@ -29,30 +29,30 @@
 
 @font-face {
     font-family: 'cooper_bold';
-    src: url(../fonts/'cooperltbtbold-webfont.woff2') format('woff2'),
-         url(../fonts/'cooperltbtbold-webfont.woff') format('woff');
+    src: url(/salt2019/fonts/'cooperltbtbold-webfont.woff2') format('woff2'),
+         url(/salt2019/fonts/'cooperltbtbold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'duel-4';
-  src: url(../fonts/'atcduel-v4sharp-webfont.eot'); /* IE9 Compat Modes */
-  src: url(../fonts/'atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/'atcduel-v4sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url(../fonts/'atcduel-v4sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url(../fonts/'atcduel-v4sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/'atcduel-v4sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url(/salt2019/fonts/'atcduel-v4sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url(/salt2019/fonts/'atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url(/salt2019/fonts/'atcduel-v4sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url(/salt2019/fonts/'atcduel-v4sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url(/salt2019/fonts/'atcduel-v4sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url(/salt2019/fonts/'atcduel-v4sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'duel-10';
-  src: url(../fonts/'atcduel-v10sharp-webfont.eot'); /* IE9 Compat Modes */
-  src: url(../fonts/'atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url(../fonts/'atcduel-v10sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url(../fonts/'atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url(../fonts/'atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url(../fonts/'atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url(/salt2019/fonts/'atcduel-v10sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url(/salt2019/fonts/'atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url(/salt2019/fonts/'atcduel-v10sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url(/salt2019/fonts/'atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url(/salt2019/fonts/'atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url(/salt2019/fonts/'atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .duel-4 {font-family: 'duel-4';}
