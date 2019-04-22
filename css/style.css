@@ -28,8 +28,10 @@
 }
 
 @font-face {
-    font-family: 'cooper_bold';
-    src: url(justaddsalt.ca/salt2019/fonts/'cooperltbtbold-webfont.woff2') format('woff2'),
+    font-family: 'cooper-bold';
+    src: local('Cooper Lt BT'),
+         local('CooperLtBTBold'),
+         url(justaddsalt.ca/salt2019/fonts/'cooperltbtbold-webfont.woff2') format('woff2'),
          url(justaddsalt.ca/salt2019/fonts/'cooperltbtbold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -90,6 +92,10 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'cooper-bold';
+}
+
 ::-moz-selection {
   background-color: #464646;
   color: white;
@@ -98,10 +104,6 @@ body {
 ::selection {
   background-color: #464646;
   color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'duel-4';
 }
 
 /*@media only screen and (min-width: 38em) {
