@@ -1,3 +1,5 @@
+*, *:after, *:before {margin: 0; padding: 0;}
+
 @charset "UTF-8";
 .wf-loading {
   visibility: hidden;
@@ -27,40 +29,51 @@
   scale: 1;
 }
 
+::-moz-selection {
+  background-color: #020102;
+  color: white;
+}
+
+::selection {
+  background-color: #020102;
+  color: white;
+}
+
 @font-face {
     font-family: 'cooper-bold';
-    src: local('Cooper Lt BT'),
-         local('CooperLtBTBold'),
-         url(justaddsalt.ca/salt2019/fonts/'cooperltbtbold-webfont.woff2') format('woff2'),
-         url(justaddsalt.ca/salt2019/fonts/'cooperltbtbold-webfont.woff') format('woff');
+    src: url('../fonts/cooperltbtbold-webfont.woff2') format('woff2'),
+         url('../fonts/cooperltbtbold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'duel-4';
-  src: url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.eot'); /* IE9 Compat Modes */
-  src: url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v4sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/atcduel-v4sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/atcduel-v4sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/atcduel-v4sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/atcduel-v4sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/atcduel-v4sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/atcduel-v4sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'duel-10';
-  src: url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.eot'); /* IE9 Compat Modes */
-  src: url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url(justaddsalt.ca/salt2019/fonts/'atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/atcduel-v10sharp-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/atcduel-v10sharp-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/atcduel-v10sharp-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-.duel-4 {font-family: 'duel-4';}
-.duel-10 {font-family: 'duel-10';}
-.cooper {font-family: 'cooper_bold';}
-.all-caps {text-transform: uppercase;}
+/*@media only screen and (min-width: 38em) {
+  body {
+    width: -webkit-calc(100% - 36px);
+    width: calc(100% - 36px);
+    margin: 18px auto;
+  }
+}*/
 
 html {
   font-size: 16px;
@@ -80,7 +93,7 @@ body {
   width: calc(100% - 10px);
   margin: 5px auto;*/
   background-color: white;
-  color: #464646;
+  color: #020102;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
@@ -94,26 +107,70 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'cooper-bold';
+    letter-spacing: -.015;
+    margin: 2.75rem 0 1rem;
+    line-height: .9;
 }
 
-::-moz-selection {
-  background-color: #464646;
-  color: white;
+p {margin-bottom: 1.25em;}
+
+h1, .uno {
+  margin-top: 0;
+  font-size: 4.110em;
 }
 
-::selection {
-  background-color: #464646;
-  color: white;
+h2, .dos {font-size: 3.247em;}
+
+h3, .tres {font-size: 1.424em;}
+
+h4, .cuatro {font-size: 1.125em;}
+
+h5, .cinco {font-size: 1em;}
+
+small, .small {font-size: 0.889em;}
+
+.x-small {font-size: 0.790em;}
+
+.duel-4 {font-family: 'duel-4'; text-transform: uppercase;}
+.duel-10 {font-family: 'duel-10'; text-transform: uppercase;}
+.cooper {font-family: 'cooper_bold';}
+.allcaps {text-transform: uppercase;}
+.center {text-align: center;}
+.cooper-stroke-white {
+    color: white;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.0275em;
+    -webkit-text-stroke-color: white;
+}
+.cooper-stroke-black {
+    color: #020102;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.0275em;
+    -webkit-text-stroke-color: #020102;
 }
 
-/*@media only screen and (min-width: 38em) {
-  body {
-    width: -webkit-calc(100% - 36px);
-    width: calc(100% - 36px);
-    margin: 18px auto;
-  }
-}*/
+.black-bg {background-color: #020102;}
+.bg-image {background-size: cover; background-position: center center;}
 
 body a {
   color: #464646;
 }
+
+.no-list {list-style: none;}
+.white, .white a {color:white;}
+.no-decor, .no-decor a {text-decoration: none;}
+
+header {background-image: url(../images/hero-banner.jpg); padding-top: 1em}
+
+.svg-item {display: block; overflow: hidden;}
+.nav-item {display: inline-block; margin: .25em .5em;}
+.nav-logo {width: 6.875rem; height: 2.46875rem; margin: 0 auto 1em;}
+.nav-ig {width: 1.125rem; height: 1.125rem; margin: 1em auto;}
+.ig-svg, .logo-svg {fill: white;}
+
+@media only screen and (min-width: 38em) {
+}
+
+.container {display: flex; flex-direction: column; justify-content: center; align-content: center; padding: 4rem 0}
+.btn-img {padding: 60px 0; width: 146px; background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.btn-squiggle {background-image: url(../images/btn-squiggle-circle.png);}
