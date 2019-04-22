@@ -131,8 +131,8 @@ small, .small {font-size: 0.889em;}
 
 .x-small {font-size: 0.790em;}
 
-.duel-4 {font-family: 'duel-4'; text-transform: uppercase;}
-.duel-10 {font-family: 'duel-10'; text-transform: uppercase;}
+.duel-4 {font-family: 'duel-4'; text-transform: uppercase; line-height: .8 !important;}
+.duel-10 {font-family: 'duel-10'; text-transform: uppercase; line-height: .8 !important;}
 .cooper {font-family: 'cooper_bold';}
 .allcaps {text-transform: uppercase;}
 .center {text-align: center;}
@@ -145,7 +145,7 @@ small, .small {font-size: 0.889em;}
 .cooper-stroke-black {
     color: #020102;
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.0275em;
+    -webkit-text-stroke-width: 0.02em;
     -webkit-text-stroke-color: #020102;
 }
 
