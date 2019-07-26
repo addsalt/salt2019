@@ -1,3 +1,11 @@
+/*@media only screen and (min-width: 38em) {
+  body {
+    width: -webkit-calc(100% - 36px);
+    width: calc(100% - 36px);
+    margin: 18px auto;
+  }
+}*/
+
 *, *:after, *:before {margin: 0; padding: 0;}
 
 @charset "UTF-8";
@@ -17,36 +25,10 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  font-size: 100%;
-  font-family: ocr-b-std, monospace;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -0.03em;
-    line-height: 1.4;
   /*width: -webkit-calc(100% - 10px);
   width: calc(100% - 10px);
   margin: 5px auto;*/
-  background-color: white;
-  color: #020102;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-
-/*@media only screen and (min-width: 38em) {
-  body {
-    width: -webkit-calc(100% - 36px);
-    width: calc(100% - 36px);
-    margin: 18px auto;
-  }
-}*/
-
 
 /* ----- TYPE ----- */
 
@@ -79,6 +61,26 @@ body {
        url('../fonts/atcduel-v10sharp-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/atcduel-v10sharp-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/atcduel-v10sharp-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-size: 100%;
+  font-family: ocr-b-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.03em;
+  line-height: 1.4;
+  background-coloxzr: white;
+  color: #020102;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
 h1, h2, h3, h4, h5, h6 {font-family: 'cooper-bold';letter-spacing: -.015;margin: 2.75rem 0 1rem;line-height: .9;}
@@ -127,6 +129,11 @@ body a {color: #020102;}
 .black-bg {background-color: #020102;}
 .black-bg {color: white !important;}
 
+.smooth {
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
 
 /* ----- NAV ----- */
 
@@ -139,6 +146,7 @@ header {background-image: url(../images/hero-banner.jpg); padding-top: 1em}
 
 
 /* ----- LAYOUT ----- */
+
 .flex-img {display: block; width: 100%; margin: 0 auto;}
 .center-it {margin-left: auto; margin-right: auto;}
 
@@ -331,4 +339,18 @@ footer li:nth-child(2) {margin-top: -5px;}
 @media only screen and (min-width: 40rem) {
 	footer li {display: inline-block;}
 	footer {align-items: center}
+}
+
+
+/* ---------- PROJECTS -------- */
+
+.project-hero {min-height: 20rem;}
+.proj-desc {max-width: 40rem;}
+
+.proj-nav-btn {width: 50%; text-align: center; padding: 3rem 0;}
+.proj-nav-btn:hover {background-color: rgba(255,255,255,.2);}
+
+@media only screen and (min-width: 40rem) {
+	.project-hero {min-height: 30rem;}
+	.project-row {display: flex;}
 }
